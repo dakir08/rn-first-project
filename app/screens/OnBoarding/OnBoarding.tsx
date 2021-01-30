@@ -59,7 +59,7 @@ export const OnBoardingScreen: React.FunctionComponent<OnBoardingScreenProps> = 
       snapToAlignment="center"
       showsHorizontalScrollIndicator={false}
       decelerationRate={0}
-      scrollEventThrottle={16}
+      scrollEventThrottle={10}
       onScroll={Animated.event(
         [{ nativeEvent: { contentOffset: { x: scrollX } } }],
         { useNativeDriver: false }
@@ -97,10 +97,10 @@ export const OnBoardingScreen: React.FunctionComponent<OnBoardingScreenProps> = 
           <TouchableOpacity
             style={{
               position: "absolute",
-              bottom: 0,
+              bottom: 20,
               right: 0,
-              width: 150,
-              height: 60,
+              width: 140,
+              height: 50,
               paddingLeft: 20,
               justifyContent: "center",
               backgroundColor: COLORS.blue,
